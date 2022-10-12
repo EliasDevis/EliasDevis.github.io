@@ -1,0 +1,37 @@
+.header 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 16px
+    padding:
+        top: 32px
+        bottom: 8px
+    background-color: var(--background)
+    position: fixed
+    max-width: inherit
+    width: 100%
+    top: 0
+    z-index: 999
+
+    &__links 
+        margin-left: auto
+        display: flex
+        gap: 32px
+    
+    &__link
+        color: var(--gray)
+
+        &::before
+            content: "#"
+            color: var(--primary)
+            font-weight: normal
+        
+        &:hover 
+            color: var(--white)
+
+    &__languages select
+        appearance: none
+        background: none
+        border: none
+        color: var(--gray)
+

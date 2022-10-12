@@ -1,0 +1,55 @@
+.hero 
+    display: flex
+    justify-content: space-between
+    gap: 32px
+    flex-wrap: wrap
+
+    &__content
+        margin-top: 48px
+
+
+    &__content, &__illustration
+        flex: 1 1 0
+
+    &__illustration
+        position: relative
+        display: flex
+        flex-direction: column
+
+    &__title 
+        min-width: 300px
+
+        font:
+            size: 32px
+            weight: 600
+        
+        span 
+            color: var(--primary)
+    
+    &__description
+        color: var(--gray)
+        margin-top: 32px
+        margin-bottom: 32px
+    
+    &__status
+        padding: 8px
+        border: 1px solid var(--gray)
+        color: var(--gray)
+        margin: 0 auto
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        gap: 8px
+        font-weight: 500
+
+        &::before
+            content: ''
+            display: inline-block
+            aspect-ratio: 1
+            width: 16px
+            background-color: hsl(var(--primary-cl) / 0.2)
+            border: 1px solid var(--primary)
+
+        span
+            color: var(--white)
+        
