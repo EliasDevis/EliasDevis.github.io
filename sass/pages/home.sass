@@ -1,6 +1,7 @@
 @import ../blocks/home/hero
 @import ../blocks/home/quote
 @import ../components/project
+@import ../components/skillBlock
 
 .projects 
     &__header
@@ -9,12 +10,43 @@
         align-items: center
         margin-bottom: 48px
 
-    &__list    
+.skills
+    width: 100%
+
+    &__content
         display: flex
-        align-items: start
-        gap: 16px
+        gap: 32px
         flex-wrap: wrap
 
-    .project
+    &__list
+        column-gap: 16px
+        columns: 3
+
+    &__ilustrations, &__list
+        flex: 1 1 0
+
+.about
+    display: flex
+    gap: 32px
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+
+    &__content
         flex: 1 1 0
         min-width: 300px
+
+    &__text
+        margin-bottom: 32px
+        margin-top: 48px
+        display: flex
+        flex-direction: column
+        gap: 16px
+
+    &__description
+        color: var(--gray) 
+
+    &__image
+        flex: 1 1 0
+        max-width: 340px
+    

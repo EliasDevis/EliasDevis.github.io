@@ -1,4 +1,5 @@
 import Project from "../../components/Project.js";
+import ProjectList from "../../components/ProjectList.js";
 import projects from "../../consts/projects.js";
 
 export default () => {
@@ -8,9 +9,7 @@ export default () => {
                 <h2 class="h2">projects</h2>
                 <a href="/projects">All projects ~~></a>
             </div>
-            <div class="projects__list">
-                ${projects.slice(0, 3).map(({ id }) => Project({ id })).join("")}
-            </div>
+            ${ProjectList({ limit: 3 })}
         </div>
     `;
 };

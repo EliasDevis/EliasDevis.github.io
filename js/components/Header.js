@@ -1,11 +1,13 @@
+import routes from "../consts/routes.js";
+
 const links = [
     {
         name: "home",
         path: "/",
     },
     {
-        name: "works",
-        path: "/works",
+        name: "projects",
+        path: "/projects",
     },
     {
         name: "about-me",
@@ -18,9 +20,10 @@ const links = [
 ];
 
 export default () => {
+
+
     return /*html*/ `
         <header class="header">
-
                 <a class="logo" href="/">
                     <img class="logo__img" src="/images/logo.svg" alt="Elias logo">
                     <span class="logo__name">Elias</span>
@@ -29,7 +32,7 @@ export default () => {
                     ${links
                         .map(
                             (link) => /*html*/ `
-                            <a href="${link.path}" class="header__link">${link.name}</a>
+                            <a href="${link.path}" class="header__link ${window.location.pathname === link.path ? 'header__link_active' : ''}">${link.name}</a>
                         `
                         )
                         .join("\n")}

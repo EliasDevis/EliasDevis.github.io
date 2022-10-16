@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "js/app.js",
+  "author": "Elias",
+  "license": "MIT",
+  "devDependencies": {
+    "alive-server": "^1.2.9",
+    "sass": "^1.55.0"
+  },
+  "scripts": {
+    "build:sass": "sass --no-source-map --style compressed sass/styles.sass:css/styles.css sass/pages:css/pages",
+    "dev:sass": "sass --watch --no-source-map --style compressed sass/styles.sass:css/styles.css sass/pages:css/pages",
+    "dev:server": "alive-server --entry-file=404.html .",
+    "dev:start": "npm run dev:sass & npm run dev:server"
+  }
+}

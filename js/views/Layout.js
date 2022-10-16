@@ -3,6 +3,7 @@ import Header from "../components/Header.js";
 import MediaHeader from "../components/MediaHeader.js";
 
 export default (content) => {
+
     return /*html*/ `
         ${MediaHeader()}
 

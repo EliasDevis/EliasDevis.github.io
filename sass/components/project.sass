@@ -1,6 +1,9 @@
 .project
     border: 1px solid var(--gray)
-    width: 33%
+
+    &__links
+        display: flex
+        gap: 8px
 
     &__image
         border-bottom: 1px solid var(--gray)
@@ -20,9 +23,16 @@
     
     &__techs
         display: flex
-        list-style: none
         flex-wrap: wrap
         gap: 8px 16px
         color: var(--gray)
         padding: 8px
         border-bottom: 1px solid var(--gray)
+
+.project-list
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 16px
+    align-items: start
+    margin-top: 48px

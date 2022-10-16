@@ -1,4 +1,21 @@
 import projects from "../consts/projects.js";
+import websites from "../consts/websites.js";
+
+function mapLinks(links) {
+    function map(link) {
+        let href =
+            (link === "live" ? "https://" : websites[link]) + links[link];
+
+        if (link === "cached") href = links[link];
+
+        const className = link === "cached" ? "button__secondary" : "";
+        const name = link[0].toUpperCase() + link.slice(1);
+
+        return /*html*/ `<a href="${href}" class="button ${className}">${name} =></a>`;
+    }
+
+    return Object.keys(links).map(map).join("");
+}
 
 export default ({ id }) => {
     const { hasImage, techs, name, description, links } = projects.find(
@@ -14,22 +31,19 @@ export default ({ id }) => {
             }
             
             <ul class="project__techs">
-                ${techs.map(
-                    (tech) => /*html*/ `<li class="project__tech">${tech}</li>`
-                ).join("")}
+                ${techs
+                    .map(
+                        (tech) =>
+                            /*html*/ `<li class="project__tech">${tech}</li>`
+                    )
+                    .join("")}
             </ul> 
 
             <div class="project__content">
                 <div class="project__name">${name}</div>
                 <div class="project__description">${description}</div>
                 <div class="project__links">
-                    ${Object.entries(links).map(
-                        (link) => /*html*/ `
-                            <a href="${link[1]}" class="button ${
-                            link[0] === "cached" ? "button__secondary" : ""
-                        }">${link[0][0].toUpperCase()}${link[0].slice(1)} =></a>
-                        `
-                    ).join("")}
+                    ${mapLinks(links)}
                 </div>
             </div>
         </div> 
