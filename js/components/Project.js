@@ -1,5 +1,6 @@
 import projects from "../consts/projects.js";
 import websites from "../consts/websites.js";
+import techs from "../consts/techs.js";
 
 function mapLinks(links) {
     function map(link) {
@@ -18,7 +19,7 @@ function mapLinks(links) {
 }
 
 export default ({ id }) => {
-    const { hasImage, techs, name, description, links } = projects.find(
+    const { hasImage, techs: projectTech, name, description, links } = projects.find(
         (project) => project.id === id
     );
 
@@ -31,10 +32,10 @@ export default ({ id }) => {
             }
             
             <ul class="project__techs">
-                ${techs
+                ${projectTech
                     .map(
                         (tech) =>
-                            /*html*/ `<li class="project__tech">${tech}</li>`
+                            /*html*/ `<li class="project__tech">${techs[tech]}</li>`
                     )
                     .join("")}
             </ul> 
@@ -42,9 +43,7 @@ export default ({ id }) => {
             <div class="project__content">
                 <div class="project__name">${name}</div>
                 <div class="project__description">${description}</div>
-                <div class="project__links">
-                    ${mapLinks(links)}
-                </div>
+                <div class="project__links">${mapLinks(links)}</div>
             </div>
         </div> 
     `;

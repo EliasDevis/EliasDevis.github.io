@@ -22,6 +22,8 @@ export default [
     "Vue",
     "Disnake",
     "Discord.js",
-    "Flask & Quart",
-    "Express"
+    "Flask",
+    "Quart",
+    "Express",
+    "RTK"
 ]

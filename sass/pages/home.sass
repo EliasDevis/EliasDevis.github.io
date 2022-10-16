@@ -8,6 +8,7 @@
         display: flex
         justify-content: space-between
         align-items: center
+        flex-wrap: wrap
         margin-bottom: 48px
 
 .skills
@@ -21,6 +22,10 @@
     &__list
         column-gap: 16px
         columns: 3
+
+        @media (max-width: 768px) 
+            columns: 2
+    
 
     &__ilustrations, &__list
         flex: 1 1 0
@@ -50,3 +55,38 @@
         flex: 1 1 0
         max-width: 340px
     
+.contacts
+    width: 100%
+
+    &__content
+        display: flex
+        justify-content: space-between
+        align-items: start
+        flex-wrap: wrap
+        gap: 32px
+        margin-top: 48px
+
+    &__title
+        font-weight: 600
+
+    &__list
+        margin-top: 16px
+
+    &__media
+        border: 1px solid var(--gray)
+        padding: 16px
+
+    &__description
+        color: var(--gray)
+        max-width: 600px
+
+.contact
+    display: flex
+    gap: 8px
+    color: var(--gray)
+    align-items: center
+    margin-top: 8px
+
+    &:hover
+        filter: brightness(0) invert(1)
+        

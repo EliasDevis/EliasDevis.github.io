@@ -24,4 +24,5 @@ const proxy = {
 }
 
 export default new Proxy(media, proxy);
+export const discordTag = "!Elias#3519"
 

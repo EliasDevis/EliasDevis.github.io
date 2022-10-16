@@ -1,54 +1,22 @@
 export default [
     {
         name: "Languages",
-        list: [
-            "TypeScript",
-            "JavaScript",
-            "Python"
-        ]
+        list: [0, 3]
     },
     {
         name: "DataBases",
-        list: [
-            "SQLite",
-            "PostgreSQL",
-            "MongoDB"
-        ]
+        list: [3, 6]
     },
     {
         name: "Other",
-        list: [
-            "HTML",
-            "Pug",
-            "CSS",
-            "SASS",
-            "SCSS",
-            "EJS",
-            "Jinja2",
-            "Node.js",
-            "RTK"
-        ]
+        list: [6, 13]
     },
     {
         name: "Tools i use",
-        list: [
-            "VSCode",
-            "NeoVim",
-            "Figma",
-            "Git & GitHub",
-            "FontAwesome",
-            "XFCE"
-        ]
+        list: [13, 18]
     },
     {
         name: "Frameworks",
-        list: [
-            "React",
-            "Vue",
-            "Disnake",
-            "Discord.js",
-            "Flask & Quart",
-            "Express"
-        ]
+        list: [19, 25]
     }
 ]

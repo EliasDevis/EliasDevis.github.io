@@ -3,6 +3,7 @@ import Layout from "./views/Layout.js";
 
 import routes from "./consts/routes.js";
 import startTitleAnimation from "./helpers/startTitleAnimation.js";
+import setLocaleHander from "./helpers/localeService.js";
 import loadCssFile from "./helpers/loadCssFile.js";
 import replacePath from "./helpers/replacePath.js";
 
@@ -18,3 +19,4 @@ async function render() {
 
 replacePath()
 render();
+setLocaleHander()

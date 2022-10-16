@@ -1,6 +1,4 @@
-import Project from "../../components/Project.js";
 import ProjectList from "../../components/ProjectList.js";
-import projects from "../../consts/projects.js";
 
 export default () => {
     return /*html*/ `

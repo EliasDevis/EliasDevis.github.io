@@ -55,6 +55,8 @@ body, html
         weight: 500
     
     position: relative
+    float: none
+    clear: both
     display: inline-block
     
     &::before
@@ -92,6 +94,7 @@ body, html
 
     &__label
         cursor: pointer
+        text-transform: uppercase
 
         &::after
             content: 'V'
@@ -117,6 +120,7 @@ body, html
     &__option
         cursor: pointer
         padding: 8px
+        text-transform: uppercase
 
         &:hover
             color: var(--white)
@@ -130,6 +134,10 @@ body, html
 .media
     width: 32px
     aspect-ratio: 1
+
+    &__icon
+        width: 100%
+        aspect-ratio: 1
 
     &__icon:hover
         filter: brightness(0) invert(1)

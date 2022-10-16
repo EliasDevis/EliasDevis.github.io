@@ -11,7 +11,7 @@ export default () => {
                 </div>
                 <div class="skills__list">
                     ${skills
-                        .filter((skill) => skill.name !== "Tools i use")
+                        .filter((skill) => skill.name !== "Tools i ")
                         .map(({ name }) => SkillBlock({ name }))
                         .join("")}
                 </div>

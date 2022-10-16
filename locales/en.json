@@ -1,0 +1,82 @@
+{
+    "header": {
+        "home": "home",
+        "projects": "projects",
+        "about": "about-me",
+        "contacts": "contacts"
+    },
+    "footer": {
+        "description": "Web designer and front-end developer based in Ukraine",
+        "copyright": "Copyright 2022. Made by Elias",
+        "media": "Media"
+    },
+    "projects": {
+        "chertnodes": {
+            "name": "ChertNodes",
+            "description": "Minecraft servers hosting"
+        },
+        "protectx": {
+            "name": "ProtectX web",
+            "description": "Discord anti-crash bot"
+        },
+        "khnaswers": {
+            "name": "Kahoot Answers",
+            "description": "Get answers from kahoot quiz"
+        },
+        "kotikbot": {
+            "name": "KotikBot",
+            "description": "Landing for multi-funtional cute discord bot"
+        },
+        "portfolio": {
+            "name": "This Portfolio",
+            "description": "My personal portfolio"
+        },
+        "blog": {
+            "name": "My blog",
+            "description": "Front-end of my future blog website"
+        },
+        "discordbot": {
+            "name": "Discord Bot Boilerplate",
+            "description": "Start creating scalable discord.js bot with typescript in seconds"
+        },
+        "chesspro": {
+            "name": "Chess PRO",
+            "description": "Landing page about service for viewing chess tournaments"
+        },
+        "ooku": {
+            "name": "Ooku",
+            "description": "Link shortener with discord auth"
+        }
+    },
+    "pages": {
+        "home": {
+            "hero": {
+                "title": "Elias is a <span>web designer</span> and <span>front-end</span> developer",
+                "description": "He crafts responsive websites where technologies meet creativity",
+                "button": "Contact ME",
+                "status": "Currently working on {}"
+            },
+            "quote": {
+                "text": "With great power comes great electricity bill",
+                "author": "Dr. Who"
+            },
+            "projects": {
+                "title": "projects",
+                "button": "View all"
+            },
+            "skills": {
+                "title": "skills"
+            },
+            "about": {
+                "p1": "I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences. ",
+                "p2": "Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.",
+                "button": "View all"
+            },
+            "contacts": {
+                "text": "I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me",
+                "media": "Message me here",
+                "donate": "Donate me here"
+            }
+        }
+    }
+}

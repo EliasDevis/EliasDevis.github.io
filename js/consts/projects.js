@@ -1,112 +1,99 @@
-
 const projects = [
     {
         name: "ChertNodes",
         id: "chertnodes",
         description: "Minecraft servers hosting",
         links: {
-            live: "chernodes.ru"
+            live: "chernodes.ru",
         },
-        techs: ["Flask", "Python", "SCSS"],
-        hasImage: true
+        techs: [23, 2, 9],
+        hasImage: true,
     },
     {
         name: "ProtectX",
         id: "protectx",
         description: "Discord anti-crash bot",
-        techs: ["Express.js", "Node.js", "React", "Redux", "Discord.js"],
+        techs: [25, 12, 19, 26, 22],
         links: {
-            cached: "protectx.com"
+            cached: "protectx.com",
         },
-        hasImage: true
+        hasImage: true,
     },
     {
         name: "Kahoot Answers",
         id: "khanswers",
         description: "Get answers from kahoot quiz",
-        techs: ["Express.js", "Node.js", "Ejs"],
+        techs: [25, 12, 10],
         links: {
             live: "khanswers.vercel.app",
-            github: "eliasdev/khanswers"
+            github: "eliasdev/khanswers",
         },
-        hasImage: true
+        hasImage: true,
     },
     {
         name: "Kotikbot",
         id: "kotikbot",
         description: "Multi-functional discord bot",
-        techs: ["HTML", "CSS", "JS"],
+        techs: [6, 7, 1],
         links: {
             live: "kotikbot.github.io",
-            github: "kotikbot/kotikbot.github.io"
+            github: "kotikbot/kotikbot.github.io",
         },
-        hasImage: true
+        hasImage: true,
     },
     {
         name: "This Portfolio",
         id: "portfolio",
         description: "My personal portfolio",
-        techs: ["SASS", "HTML", "JS"],
+        techs: [8, 6, 1],
         links: {
             figma: "elias_dev/portfolio",
-            github: "elias/portfolio"
+            github: "elias/portfolio",
         },
-        hasImage: true
-
-    },
-    {
-        name: "Discord Bot Boilerplate",
-        id: "discordbot",
-        description: "Start creating scalable discord.js bot with typescript in seconds",
-        techs: ["Discord.js", "Node.js", "TypeScript"],
-        links: {
-            github: "elias/bot-template"
-        },
-        isSmall: true
+        hasImage: true,
     },
     {
         name: "My blog",
         id: "blog",
         description: "Front-end of my future blog website written in vue",
-        techs: ["VUE", "SCSS"],
+        techs: [20, 9],
         links: {
-            github: "elias/my-blog"
+            github: "elias/my-blog",
         },
         isSmall: true,
         hasImage: true,
     },
     {
+        name: "Discord Bot Boilerplate",
+        id: "discordbot",
+        description:
+            "Start creating scalable discord.js bot with typescript in seconds",
+        techs: [22, 12, 0],
+        links: {
+            github: "elias/bot-template",
+        },
+        isSmall: true,
+    },
+    {
         name: "Chess PRO",
         id: "chesspro",
         description: "Landing page about service for viewing chess tournaments",
-        techs: ["Figma"],
+        techs: [15],
         links: {
-            figma: "elias_dev/portfolio"
+            figma: "elias_dev/portfolio",
         },
-        isSmall: true
-
-    },
-    {
-        name: "School",
-        id: "school",
-        description: "Figma template website for my current school",
-        techs: ["Figma"],
-        links: {
-            figma: "elias_dev/school"
-        },
-        isSmall: true
-
+        isSmall: true,
     },
     {
         name: "Ooku",
         id: "ooku",
         description: "Link shortener with discord auth",
-        techs: ["Python", "Flask"],
+        techs: [2, 23],
         links: {
-            live: "ooku.ga"
+            live: "ooku.ga",
         },
-        isSmall: true
-    }
+        isSmall: true,
+    },
 ];
 
-export default projects
+export default projects;
