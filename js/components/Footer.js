@@ -1,7 +1,7 @@
 import MediaIcon from "./MediaIcon.js";
 import media from "../consts/media.js";
 
-export default () => {
+export default (t) => {
     return /*html*/ `
         <footer class="footer">
             <div class="container">
@@ -15,10 +15,10 @@ export default () => {
                             <a class="footer__email" href="${media.email}">${media.emailRaw}</a>
                         </div>
 
-                        <p class="footer__description">Web designer and front-end developer based in Ukraine</p>
+                        <p class="footer__description">${t.description}</p>
                     </div>
                     <div class="footer__media">
-                        <div class="footer__title">Media</div>
+                        <div class="footer__title">${t.media}</div>
                         <div class="footer__list">
                             ${["figma", "github", "discord"]
                                 .map((name) => MediaIcon({ name }))
@@ -26,7 +26,7 @@ export default () => {
                         </div>
                     </div>
                 </div>
-                <div class="footer__copyright">© Copyright 2022. Made by Elias</div>
+                <div class="footer__copyright">© ${t.copyright}</div>
             </div>
 
         </footer>

@@ -1,5 +1,5 @@
-import Pathname from "../components/Pathname.js";
+import Path from "../components/Path.js";
 
-export default () => {
-    return /*html*/ `${Pathname({ description: "About me" })}`;
+export default (t) => {
+    return /*html*/ `${Path({ description: t.description })}`;
 };

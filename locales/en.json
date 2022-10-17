@@ -10,6 +10,13 @@
         "copyright": "Copyright 2022. Made by Elias",
         "media": "Media"
     },
+    "skills": {
+        "language": "Languages",
+        "database": "Databases",
+        "other": "Other",
+        "tool": "Tools",
+        "framework": "Frameworks"
+    },
     "projects": {
         "chertnodes": {
             "name": "ChertNodes",
@@ -84,6 +91,12 @@
             "description": "All of my projects",
             "decent": "decent",
             "small": "small"
+        },
+        "about": {
+            "description": "Who am i"
+        },
+        "contacts": {
+            "description": "How to contact me"
         }
     }
 }

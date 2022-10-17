@@ -10,6 +10,13 @@
         "copyright": "Все права защищены 2022. Сделал Elias",
         "media": "Медиа"
     },
+    "skills": {
+        "language": "Языки",
+        "database": "Базы данных",
+        "other": "Остальное",
+        "tool": "Инструменты",
+        "framework": "Библиотеки"
+    },
     "projects": {
         "chertnodes": {
             "name": "ChertNodes",
@@ -25,7 +32,7 @@
         },
         "kotikbot": {
             "name": "КотикБот",
-            "description": "Сайт для мульти-функционального дискорд бота"
+            "description": "Сайт для мультифункционального дискорд бота"
         },
         "portfolio": {
             "name": "Это портфолио",
@@ -84,6 +91,12 @@
             "description": "Мои проекты",
             "decent": "неплохие",
             "small": "маленькие"
+        },
+        "about": {
+            "description": "Кто я такой"
+        },
+        "contacts": {
+            "description": "Как со мной можно связатся"
         }
     }
 }

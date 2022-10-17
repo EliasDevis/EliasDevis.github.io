@@ -1,6 +1,28 @@
 
 $screen: 768px
 
+.media-header 
+    position: fixed
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    left: 16px
+    gap: 8px
+
+    @media (max-width: 1024px) 
+        display: none
+    
+
+    &__links 
+        display: grid
+        grid-auto-columns: 1fr
+
+    &__line 
+        width: 1px
+        height: 33vh
+        background-color: var(--gray)
+        display: block
 
 .hamburger
     width: 32px
@@ -94,11 +116,7 @@ $screen: 768px
     top: 0
     width: 100%
     z-index: 999
-
-    @media (max-width: $screen) 
-        padding-top: 16px
     
-
     &__inner
         display: flex
         width: 100%
@@ -132,9 +150,10 @@ $screen: 768px
         &:hover 
             color: var(--white)
 
-
-    @media (max-width: $screen)
+    @media (max-width: $screen) 
+        padding-top: 16px
 
         &__links, .dropdown
             display: none
+
         

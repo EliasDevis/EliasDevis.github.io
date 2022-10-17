@@ -1,0 +1,47 @@
+.dropdown
+    color: var(--gray)
+    position: relative
+
+    &:hover &__list
+        display: flex
+
+    &__label
+        cursor: pointer
+        text-transform: uppercase
+
+        &::after
+            content: 'V'
+            display: inline-block
+            scale: 1 0.3
+            font-weight: 500
+            margin-left: 4px
+
+        &:hover
+            color: var(--white)
+
+            &::after
+                rotate: 180deg
+
+    &__list
+        display: none
+        flex-direction: column
+        border: 1px solid var(--gray)
+        position: absolute
+        background-color: var(--background)
+
+        bottom: 0
+        transform: translateY(100%)
+
+    &__option
+        cursor: pointer
+        padding: 8px
+        text-transform: uppercase
+
+        &:hover
+            color: var(--white)
+
+        &:first-child
+            padding-bottom: 4px
+        
+        &:nth-child(2)
+            padding-top: 4px

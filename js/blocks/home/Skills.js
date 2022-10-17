@@ -1,7 +1,7 @@
 import SkillBlock from "../../components/SkillBlock.js";
 import skills from "../../consts/skills.js";
 
-export default (t) => {
+export default (t, t2) => {
     return /*html*/ `
         <div class="skills">
             <h2 class="h2">${t.title}</h2>
@@ -10,9 +10,11 @@ export default (t) => {
 
                 </div>
                 <div class="skills__list">
-                    ${skills
-                        .filter((skill) => skill.name !== "Tools i ")
-                        .map(({ name }) => SkillBlock({ name }))
+                    ${Object.keys({
+                        ...skills,
+                        tool: undefined,
+                    })
+                        .map((id) => SkillBlock({ id }, t2))
                         .join("")}
                 </div>
 

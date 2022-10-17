@@ -1,0 +1,18 @@
+.path
+    align-self: start
+    display: block
+    
+    width: 100%
+
+    &__name
+        font: 
+            size: 32px
+            weight: 600
+        
+        &::before
+            content: '/'
+            color: var(--primary)
+
+    &__description
+        color: var(--gray)
+        margin-top: 16px

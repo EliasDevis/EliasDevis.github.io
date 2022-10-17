@@ -2,13 +2,11 @@ import Layout from "./views/Layout.js";
 
 import routes from "./consts/routes.js";
 import startTitleAnimation from "./helpers/startTitleAnimation.js";
-import localeHandler, {getLocale} from "./helpers/localeHandler.js";
+import localeHandler from "./helpers/localeHandler.js";
 import loadCssFile from "./helpers/loadCssFile.js";
 import replacePath from "./helpers/replacePath.js";
 
 const rootId = "root";
-
-
 async function render() {
     const path = routes[window.location.pathname] ?? routes["/404"];
 
