@@ -77,6 +77,11 @@
                 "media": "Message me here",
                 "donate": "Donate me here"
             }
+        },
+        "projects": {
+            "description": "All of my projects",
+            "decent": "decent",
+            "small": "small"
         }
     }
 }

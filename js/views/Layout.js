@@ -4,8 +4,8 @@ import Header from "../components/Header.js";
 export default (content) => {
 
     return /*html*/ `
+        ${Header()}
         <div class="container content">
-            ${Header()}
             ${content()}
         </div>
         ${Footer()}

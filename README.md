@@ -6,4 +6,3 @@
 - [ ] Animation
 - [ ] Localization
 - [ ] Background shapes
-- [ ] Dynamic imports

@@ -8,7 +8,7 @@ export default () => {
             </div>
             <div class="hero__illustration">
                 <img src="/images/hero.png" alt="Elias" class="hero__image">
-                <div class="hero__status">Currently working on <span>Portfolio</span></div>
+                <div class="hero__status">Currently working on <a href="https://elias-dev.ml">Portfolio</a></div>
             </div>
         </div>
     `;

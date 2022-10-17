@@ -1,6 +1,6 @@
 
 // From https://github.com/rafgraph/spa-github-pages
-export default () => {
+export default async () => {
     const l = window.location;
 
     if (l.search[1] === "/") {

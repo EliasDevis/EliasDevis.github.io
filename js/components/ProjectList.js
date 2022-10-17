@@ -4,8 +4,7 @@ import projects from "../consts/projects.js";
 
 export default ({ title, filter = () => true, limit = projects.length }) => {
     return /*html*/ `
-        <div>
-            ${title ? `<h2 class="h2">${title}</h2>` : ""}
+            ${title ? `<div> <h2 class="h2">${title}</h2>` : ""}
             <div class="project-list">
                 ${projects
                     .filter(filter)
@@ -14,6 +13,6 @@ export default ({ title, filter = () => true, limit = projects.length }) => {
                     .map(({ id }) => Project({ id }))
                     .join("")}
             </div>
-        </div>
+        ${title ? "</div>" : ""}
     `;
 };

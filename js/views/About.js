@@ -1,5 +1,5 @@
+import Pathname from "../components/Pathname.js";
+
 export default () => {
-    return /*html*/ `
-            Hello About! 
-        `;
+    return /*html*/ `${Pathname({ description: "About me" })}`;
 };

@@ -1,5 +1,5 @@
+import Pathname from "../components/Pathname.js";
+
 export default () => {
-    return /*html*/ `
-            Hello Contacts! 
-        `;
+    return /*html*/ `${Pathname({ description: "My media contacts" })}`;
 };

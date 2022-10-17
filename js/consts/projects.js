@@ -5,6 +5,7 @@ const projects = [
         description: "Minecraft servers hosting",
         links: {
             live: "chernodes.ru",
+            figma: "1149829028455305659"
         },
         techs: [23, 2, 9],
         hasImage: true,
@@ -26,14 +27,14 @@ const projects = [
         techs: [25, 12, 10],
         links: {
             live: "khanswers.vercel.app",
-            github: "eliasdev/khanswers",
+            github: "/kahoot-answers",
         },
         hasImage: true,
     },
     {
-        name: "Kotikbot",
+        name: "Kotikbot web",
         id: "kotikbot",
-        description: "Multi-functional discord bot",
+        description: "Landing page for multi-functional discord bot",
         techs: [6, 7, 1],
         links: {
             live: "kotikbot.github.io",
@@ -47,8 +48,8 @@ const projects = [
         description: "My personal portfolio",
         techs: [8, 6, 1],
         links: {
-            figma: "elias_dev/portfolio",
-            github: "elias/portfolio",
+            figma: "1111111111111111111",
+            github: "/portfolio",
         },
         hasImage: true,
     },
@@ -58,7 +59,8 @@ const projects = [
         description: "Front-end of my future blog website written in vue",
         techs: [20, 9],
         links: {
-            github: "elias/my-blog",
+            github: "/my-blog",
+            figma: "1111111111111111111"
         },
         isSmall: true,
         hasImage: true,
@@ -70,7 +72,7 @@ const projects = [
             "Start creating scalable discord.js bot with typescript in seconds",
         techs: [22, 12, 0],
         links: {
-            github: "elias/bot-template",
+            github: "/bot-template",
         },
         isSmall: true,
     },
@@ -80,7 +82,7 @@ const projects = [
         description: "Landing page about service for viewing chess tournaments",
         techs: [15],
         links: {
-            figma: "elias_dev/portfolio",
+            figma: "1148344443083977909",
         },
         isSmall: true,
     },

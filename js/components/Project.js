@@ -1,6 +1,7 @@
 import projects from "../consts/projects.js";
 import websites from "../consts/websites.js";
 import techs from "../consts/techs.js";
+import media from "../consts/media.js";
 
 function mapLinks(links) {
     function map(link) {
@@ -8,6 +9,8 @@ function mapLinks(links) {
             (link === "live" ? "https://" : websites[link]) + links[link];
 
         if (link === "cached") href = links[link];
+        if (link === "figma") href = `https://figma.com/community/file/${links[link]}`
+        if (link === "github" && links[link].startsWith("/")) href = media.github + links[link]
 
         const className = link === "cached" ? "button__secondary" : "";
         const name = link[0].toUpperCase() + link.slice(1);

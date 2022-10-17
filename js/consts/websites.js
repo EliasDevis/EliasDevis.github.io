@@ -9,11 +9,14 @@ const websites = {
     cssBattle: "cssbattle.dev/player/",
     codepen: "codepen.io/",
     dribble: "dribbble.com/",
+    email: "mailto:"
 }
+
+const figmaFile = "https://figma.com/community/file/"
 
 const proxy = {
     get(target, name) {
-        return `https://${target[name]}`
+        return `${name === "email" ? "" : "https://"}${target[name]}`
     }
 }
 
