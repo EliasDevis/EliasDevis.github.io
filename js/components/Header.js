@@ -3,26 +3,24 @@ import MediaIcon from "./MediaIcon.js";
 
 const links = [
     {
-        name: "home",
+        id: "home",
         path: "/",
     },
     {
-        name: "projects",
+        id: "projects",
         path: "/projects",
     },
     {
-        name: "about-me",
+        id: "about",
         path: "/about-me",
     },
     {
-        name: "contacts",
+        id: "contacts",
         path: "/contacts",
     },
 ];
 
-export default () => {
-
-
+export default (t) => {
     return /*html*/ `
         <header class="header">
             <input class="hamburger" type="checkbox" />
@@ -30,9 +28,9 @@ export default () => {
             <div class="media-header">
                 <span class="media-header__line"></span>
                 <div class="media-header__links">
-                    ${["discord", "github", "email"].map((name) =>
-                        MediaIcon({ name })
-                    ).join("")}
+                    ${["discord", "github", "email"]
+                        .map((name) => MediaIcon({ name }))
+                        .join("")}
                 </div>
             </div>
 
@@ -48,7 +46,11 @@ export default () => {
                         ${links
                             .map(
                                 (link) => /*html*/ `
-                                <a href="${link.path}" class="header__link ${window.location.pathname === link.path ? 'header__link_active' : ''}">${link.name}</a>
+                                <a href="${link.path}" class="header__link ${
+                                    window.location.pathname === link.path
+                                        ? "header__link_active"
+                                        : ""
+                                }">${t[link.id]}</a>
                             `
                             )
                             .join("")}

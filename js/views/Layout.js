@@ -1,13 +1,15 @@
 import Footer from "../components/Footer.js";
 import Header from "../components/Header.js";
+import { getLocale } from "../helpers/localeHandler.js";
 
-export default (content) => {
+export default async (content, path) => {
+    const locale = await getLocale()
 
     return /*html*/ `
-        ${Header()}
+        ${Header(locale.header)}
         <div class="container content">
-            ${content()}
+            ${content(locale.pages[path.name], locale)}
         </div>
-        ${Footer()}
+        ${Footer(locale.footer)}
     `;
 };

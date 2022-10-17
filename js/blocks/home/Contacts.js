@@ -11,14 +11,14 @@ const contacts = [
     },
 ];
 
-export default () => {
+export default (t) => {
     return /*html*/ `
         <div class="contacts">
-            <h2 class="h2">contacts</h2>
+            <h2 class="h2">${t.title}</h2>
             <div class="contacts__content">
-                <p class="contacts__description">I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</p>
+                <p class="contacts__description">${t.text}</p>
                 <div class="contacts__media">
-                    <h3 class="contacts__title">Message me here</h3>
+                    <h3 class="contacts__title">${t.media}</h3>
                     <div class="contacts__list">
                         ${contacts
                             .map(

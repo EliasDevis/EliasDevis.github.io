@@ -1,10 +1,10 @@
 import SkillBlock from "../../components/SkillBlock.js";
 import skills from "../../consts/skills.js";
 
-export default () => {
+export default (t) => {
     return /*html*/ `
         <div class="skills">
-            <h2 class="h2">skills</h2>
+            <h2 class="h2">${t.title}</h2>
             <div class="skills__content">
                 <div class="skills__ilustrations">
 

@@ -21,8 +21,8 @@ function mapLinks(links) {
     return Object.keys(links).map(map).join("");
 }
 
-export default ({ id }) => {
-    const { hasImage, techs: projectTech, name, description, links } = projects.find(
+export default ({ id }, t) => {
+    const { hasImage, techs: projectTech, links } = projects.find(
         (project) => project.id === id
     );
 
@@ -44,8 +44,8 @@ export default ({ id }) => {
             </ul> 
 
             <div class="project__content">
-                <div class="project__name">${name}</div>
-                <div class="project__description">${description}</div>
+                <div class="project__name">${t[id].name}</div>
+                <div class="project__description">${t[id].description}</div>
                 <div class="project__links">${mapLinks(links)}</div>
             </div>
         </div> 

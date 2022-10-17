@@ -1,3 +1,5 @@
+const defaultLocale = "en"
+
 
 function setLocaleHander() {
     const options = document.querySelectorAll(".dropdown__option");
@@ -10,9 +12,18 @@ function setLocaleHander() {
         option.addEventListener("click", () => {
             localStorage.locale = option.innerHTML;
 
-            [label.innerHTML, option.innerHTML] = [option.innerHTML, label.innerHTML]
+            // [label.innerHTML, option.innerHTML] = [option.innerHTML, label.innerHTML]
+            window.location.reload();
+
         });
     });
 }
 
+async function getLocale() {
+    const locale = localStorage.locale ?? defaultLocale
+
+    return fetch(`/locales/${locale}.json`).then(res => res.json())
+}
+
 export default setLocaleHander;
+export { getLocale }

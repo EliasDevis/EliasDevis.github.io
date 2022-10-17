@@ -2,7 +2,7 @@ import Project from "../components/Project.js";
 import projects from "../consts/projects.js";
 
 
-export default ({ title, filter = () => true, limit = projects.length }) => {
+export default ({ title, filter = () => true, limit = projects.length }, t) => {
     return /*html*/ `
             ${title ? `<div> <h2 class="h2">${title}</h2>` : ""}
             <div class="project-list">
@@ -10,7 +10,7 @@ export default ({ title, filter = () => true, limit = projects.length }) => {
                     .filter(filter)
                     .slice(0, limit)
                     .sort((a, b) => a.hasImage - b.hasImage)
-                    .map(({ id }) => Project({ id }))
+                    .map(({ id }) => Project({ id }, t))
                     .join("")}
             </div>
         ${title ? "</div>" : ""}

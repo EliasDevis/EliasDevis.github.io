@@ -1,8 +1,6 @@
 const projects = [
     {
-        name: "ChertNodes",
         id: "chertnodes",
-        description: "Minecraft servers hosting",
         links: {
             live: "chernodes.ru",
             figma: "1149829028455305659"
@@ -11,9 +9,7 @@ const projects = [
         hasImage: true,
     },
     {
-        name: "ProtectX",
         id: "protectx",
-        description: "Discord anti-crash bot",
         techs: [25, 12, 19, 26, 22],
         links: {
             cached: "protectx.com",
@@ -21,9 +17,7 @@ const projects = [
         hasImage: true,
     },
     {
-        name: "Kahoot Answers",
         id: "khanswers",
-        description: "Get answers from kahoot quiz",
         techs: [25, 12, 10],
         links: {
             live: "khanswers.vercel.app",
@@ -32,9 +26,7 @@ const projects = [
         hasImage: true,
     },
     {
-        name: "Kotikbot web",
         id: "kotikbot",
-        description: "Landing page for multi-functional discord bot",
         techs: [6, 7, 1],
         links: {
             live: "kotikbot.github.io",
@@ -43,9 +35,7 @@ const projects = [
         hasImage: true,
     },
     {
-        name: "This Portfolio",
         id: "portfolio",
-        description: "My personal portfolio",
         techs: [8, 6, 1],
         links: {
             figma: "1111111111111111111",
@@ -54,9 +44,7 @@ const projects = [
         hasImage: true,
     },
     {
-        name: "My blog",
         id: "blog",
-        description: "Front-end of my future blog website written in vue",
         techs: [20, 9],
         links: {
             github: "/my-blog",
@@ -66,10 +54,7 @@ const projects = [
         hasImage: true,
     },
     {
-        name: "Discord Bot Boilerplate",
         id: "discordbot",
-        description:
-            "Start creating scalable discord.js bot with typescript in seconds",
         techs: [22, 12, 0],
         links: {
             github: "/bot-template",
@@ -77,9 +62,7 @@ const projects = [
         isSmall: true,
     },
     {
-        name: "Chess PRO",
         id: "chesspro",
-        description: "Landing page about service for viewing chess tournaments",
         techs: [15],
         links: {
             figma: "1148344443083977909",
@@ -87,9 +70,7 @@ const projects = [
         isSmall: true,
     },
     {
-        name: "Ooku",
         id: "ooku",
-        description: "Link shortener with discord auth",
         techs: [2, 23],
         links: {
             live: "ooku.ga",
