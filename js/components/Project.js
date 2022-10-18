@@ -13,7 +13,7 @@ function mapLinks(links) {
         if (link === "github" && links[link].startsWith("/")) href = media.github + links[link]
 
         const className = link === "cached" ? "button__secondary" : "";
-        const name = link[0].toUpperCase() + link.slice(1);
+        const name = `${link[0].toUpperCase()}${link.slice(1)}`;
 
         return /*html*/ `<a href="${href}" class="button ${className}">${name} =></a>`;
     }

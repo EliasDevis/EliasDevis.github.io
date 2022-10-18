@@ -12,9 +12,7 @@ function setLocaleHander() {
         option.addEventListener("click", () => {
             localStorage.locale = option.innerHTML;
 
-            // [label.innerHTML, option.innerHTML] = [option.innerHTML, label.innerHTML]
             window.location.reload();
-
         });
     });
 }

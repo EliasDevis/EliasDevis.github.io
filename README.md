@@ -4,5 +4,3 @@
 - [ ] Page about-me
 - [ ] Page contacts
 - [ ] Animation
-- [ ] Localization
-- [ ] Background shapes

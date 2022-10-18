@@ -1,3 +1,5 @@
+import Dots from "../../components/Dots.js";
+
 export default (t) => {
     return /*html*/ `
         <div class="hero">
@@ -6,9 +8,11 @@ export default (t) => {
                 <div class="hero__description">${t.description}</div>
                 <a class="button button__primary" href="/contacts">${t.button} ##</a>
             </div>
-            <div class="hero__illustration">
+            <div class="hero__illustrations">
+                <img src="/images/logo-outline.svg" alt="" class="hero__logo">
                 <img src="/images/hero.png" alt="Elias" class="hero__image">
                 <div class="hero__status">${t.status} <a href="https://elias-dev.ml">Portfolio</a></div>
+                ${Dots({})}
             </div>
         </div>
     `;

@@ -5,7 +5,7 @@ export default (t, t2) => {
         <div class="projects">
             <div class="projects__header">
                 <h2 class="h2">${t.title}</h2>
-                <a href="/projects">${t.button} ~~></a>
+                <a class="projects__link" href="/projects">${t.button} ~~></a>
             </div>
             ${ProjectList({ limit: 3 }, t2)}
         </div>

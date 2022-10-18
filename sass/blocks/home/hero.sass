@@ -5,10 +5,29 @@
     gap: 32px
     flex-wrap: wrap
 
-    &__content, &__illustration
+    .dots
+        position: absolute
+        top: 40%
+        width: 12vmin
+        left: 70%
+        z-index: 4
+
+    &__logo
+        position: absolute
+        width: 30vmin
+        top: 10%
+        z-index: 1
+        aspect-ratio: 1
+    
+    &__image
+        position: relative
+        z-index: 2
+        border-bottom: 1px solid var(--primary)
+
+    &__content, &__illustrations
         flex: 1 1 0
 
-    &__illustration
+    &__illustrations
         position: relative
         display: flex
         flex-direction: column
@@ -36,15 +55,18 @@
         display: inline-flex
         justify-content: center
         align-items: center
+        position: relative
+        top: -1px
+        z-index: 5
         gap: 8px
         font-weight: 500
 
         &::before
-            content: ''
+            content: ""
             display: inline-block
             aspect-ratio: 1
             width: 16px
-            background-color: hsl(var(--primary-cl) / 0.2)
+            background-color: var(--primary-op)
             border: 1px solid var(--primary)
 
         a

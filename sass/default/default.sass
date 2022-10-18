@@ -1,12 +1,15 @@
 
-    
 :root
-    --primary-cl: 287 60% 65%
-    --gray-cl: 219 14% 71%
+    --primary-base: 287 60% 65%
+    --gray-base: 219 14% 71%
+    --background-base: 218, 12%, 18%
 
-    --primary: hsl(var(--primary-cl))
-    --gray: hsl(var(--gray-cl))
-    --background: hsl(218, 12%, 18%)
+    --primary-op: hsl(var(--primary-base) / 0.1)
+    --gray-op: hsl(var(--gray-base) / 0.1)
+
+    --primary: hsl(var(--primary-base))
+    --gray: hsl(var(--gray-base))
+    --background: hsl(var(--background-base))
     --white: hsl(0, 0%, 100%)
 
 body, html
@@ -17,35 +20,9 @@ body, html
     gap: 112px
     flex-direction: column
 
+.dots
+    width: 10vmin
+    height: auto
 
-.container
-    $width: 1024px
-
-    max-width: $width
-    margin: 0 auto
-    position: relative
-
-    @media (max-width: $width)
-        padding: 16px
-
-.content
-    margin-top: 112px
-    flex: 1
-    display: flex
-    flex-direction: column
-    align-items: center
-    gap: 112px
-
-
-.logo
-    display: flex
-    gap: 8px
-
-    &__img
-        aspect-ratio: 1
-        width: 16px
-
-    &__name
-        font-weight: 700
-
-
+    circle
+        fill: var(--gray)

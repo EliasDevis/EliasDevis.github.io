@@ -2,7 +2,7 @@ import websites from "./websites.js"
 
 const media = {
     discord: "914240860101681163",
-    email: "elias@elias.ml",
+    email: "elias@elias-dev.ml",
     github: "EliasDevis",
     figma: "elias_dev",
     replit: "EliasDev",

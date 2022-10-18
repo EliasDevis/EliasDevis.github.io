@@ -47,8 +47,8 @@ const projects = [
         id: "blog",
         techs: [20, 9],
         links: {
+            figma: "1111111111111111111",
             github: "/my-blog",
-            figma: "1111111111111111111"
         },
         isSmall: true,
         hasImage: true,

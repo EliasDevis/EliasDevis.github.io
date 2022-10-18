@@ -1,4 +1,4 @@
-const steps = "-+=)";
+const steps = "/-\\|";
 const FPS = 2
 const frameInterval = 1000 / FPS;
 let step = 0;
@@ -9,7 +9,7 @@ export default (pathName) => {
 
     function animation(timestamp) {
         if (lastTimestep + frameInterval < timestamp) {
-            document.title = `${steps[step++]} | ELIAS | ${pathName}`;
+            document.title = `${steps[step++]} ELIAS | ${pathName}`;
 
             step %= steps.length;
             lastTimestep = timestamp;
