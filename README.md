@@ -1,6 +1,7 @@
 # My Portfolio #
-Written in vanilla js
-PS. I'm sure there is a lot of bugs, so pull requests are welcome
+Written in vanilla js  
+*PS. I'm sure there is a lot of bugs, so pull requests are welcome*
+
 
 ## TODO ##
 - [ ] Page contacts
