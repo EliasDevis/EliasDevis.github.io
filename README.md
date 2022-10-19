@@ -1,6 +1,7 @@
-# Work in progress #
+# My Portfolio #
+Showcase of my projects
 
 ## TODO ##
-- [ ] Page about-me
 - [ ] Page contacts
 - [ ] Animation
+- [ ] Make public

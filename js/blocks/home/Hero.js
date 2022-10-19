@@ -2,7 +2,7 @@ import Dots from "../../components/Dots.js";
 
 export default (t) => {
     return /*html*/ `
-        <div class="hero">
+        <section class="hero">
             <div class="hero__content">
                 <h1 class="hero__title">${t.title}</h1>
                 <div class="hero__description">${t.description}</div>
@@ -14,6 +14,6 @@ export default (t) => {
                 <div class="hero__status">${t.status} <a href="https://elias-dev.ml">Portfolio</a></div>
                 ${Dots({})}
             </div>
-        </div>
+        </section>
     `;
 };

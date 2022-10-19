@@ -1,24 +1,7 @@
 import routes from "../consts/routes.js";
 import MediaIcon from "./MediaIcon.js";
 
-const links = [
-    {
-        id: "home",
-        path: "/",
-    },
-    {
-        id: "projects",
-        path: "/projects",
-    },
-    {
-        id: "about",
-        path: "/about-me",
-    },
-    {
-        id: "contacts",
-        path: "/contacts",
-    },
-];
+const paths = ["/", "/projects", "/about-me"]
 
 export default (t) => {
     return /*html*/ `
@@ -43,14 +26,14 @@ export default (t) => {
                         <span class="logo__name">Elias</span>
                     </a>
                     <div class="header__links">
-                        ${links
+                        ${paths
                             .map(
-                                (link) => /*html*/ `
-                                <a href="${link.path}" class="header__link ${
-                                    window.location.pathname === link.path
+                                (path) => /*html*/ `
+                                <a href="${path}" class="header__link ${
+                                    window.location.pathname === path
                                         ? "header__link_active"
                                         : ""
-                                }">${t[link.id]}</a>
+                                }">${t[routes[path].name]}</a>
                             `
                             )
                             .join("")}

@@ -8,14 +8,14 @@ const projects = [
         techs: [23, 2, 9],
         hasImage: true,
     },
-    {
-        id: "protectx",
-        techs: [25, 12, 19, 26, 22],
-        links: {
-            cached: "protectx.com",
-        },
-        hasImage: true,
-    },
+    // {
+    //     id: "protectx",
+    //     techs: [25, 12, 19, 26, 22],
+    //     links: {
+    //         cached: "protectx.com",
+    //     },
+    //     hasImage: true,
+    // },
     {
         id: "khanswers",
         techs: [25, 12, 10],

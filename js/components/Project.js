@@ -8,7 +8,7 @@ function mapLinks(links) {
         let href =
             (link === "live" ? "https://" : websites[link]) + links[link];
 
-        if (link === "cached") href = links[link];
+        // if (link === "cached") href = links[link];
         if (link === "figma") href = `https://figma.com/community/file/${links[link]}`
         if (link === "github" && links[link].startsWith("/")) href = media.github + links[link]
 

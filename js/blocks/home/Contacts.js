@@ -13,7 +13,7 @@ const contacts = [
 
 export default (t) => {
     return /*html*/ `
-        <div class="contacts">
+        <sections class="contacts">
             <h2 class="h2">${t.title}</h2>
             <div class="contacts__content">
                 <p class="contacts__description">${t.text}</p>
@@ -36,6 +36,6 @@ export default (t) => {
                 </div>
             </div>
 
-        </div>
+        </sections>
     `;
 };

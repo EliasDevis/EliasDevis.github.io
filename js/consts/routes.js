@@ -13,10 +13,10 @@ export default {
         name: "about",
         element: "About",
     },
-    "/contacts": {
-        name: "contacts",
-        element: "Contacts",
-    },
+    // "/contacts": {
+    //     name: "contacts",
+    //     element: "Contacts",
+    // },
     "/404": {
         name: "404",
         element: "PageNotFound",
