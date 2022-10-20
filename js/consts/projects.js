@@ -38,7 +38,7 @@ const projects = [
         id: "portfolio",
         techs: [8, 6, 1],
         links: {
-            figma: "1111111111111111111",
+            figma: "1164933568884615740",
             github: "/portfolio",
         },
         hasImage: true,
