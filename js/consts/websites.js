@@ -12,8 +12,6 @@ const websites = {
     email: "mailto:"
 }
 
-const figmaFile = "https://figma.com/community/file/"
-
 const proxy = {
     get(target, name) {
         return `${name === "email" ? "" : "https://"}${target[name]}`

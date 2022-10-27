@@ -9,5 +9,5 @@ Written in vanilla js
 - [ ] Animation
 - [ ] Use bundler
 - [ ] Add gh action to compile sass to css
+- [ ] Improve images
 - [ ] Delete unused code
-- [ ] Make public
