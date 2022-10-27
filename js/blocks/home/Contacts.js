@@ -5,10 +5,6 @@ const contacts = [
         name: "discord",
         text: discordTag,
     },
-    {
-        name: "email",
-        text: media.emailRaw,
-    },
 ];
 
 export default (t) => {

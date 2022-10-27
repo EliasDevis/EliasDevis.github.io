@@ -12,7 +12,7 @@ export default (t) => {
                                 <img src="/images/logo.svg" alt="logo" class="logo__img">
                                 <div class="logo__name">Elias</div>
                             </div>
-                            <a class="footer__email" href="${media.email}">${media.emailRaw}</a>
+                            <!-- <a class="footer__email" href="${media.email}">${media.emailRaw}</a> -->
                         </div>
 
                         <p class="footer__description">${t.description}</p>
