@@ -53,6 +53,10 @@
         "ooku": {
             "name": "Ooku",
             "description": "Link shortener with discord auth"
+        },
+        "madhost": {
+            "name": "MadHost",
+            "description": "Minecraft and websites hosting with low prices"
         }
     },
     "pages": {

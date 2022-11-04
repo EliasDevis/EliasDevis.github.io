@@ -11,6 +11,7 @@ const media = {
     cssBattle: "elias_dev",
     codepen: "elias_dev",
     dribble: "Elias_dev",
+    email: "elias@elias-dev.ml"
 }
 
 const proxy = {

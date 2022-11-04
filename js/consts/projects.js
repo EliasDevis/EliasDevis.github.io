@@ -77,6 +77,15 @@ const projects = [
         },
         isSmall: true,
     },
+    {
+        id: "madhost",
+        techs: [27, 28, 29, 12],
+        links: {
+            live: "madhost.pw",
+        },
+        hasImage: true,
+
+    },
 ];
 
 export default projects;

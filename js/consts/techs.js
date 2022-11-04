@@ -25,5 +25,8 @@ export default [
     "Flask",
     "Quart",
     "Express",
-    "RTK"
+    "RTK",
+    "Pug",
+    "Less",
+    "Gulp"
 ]
