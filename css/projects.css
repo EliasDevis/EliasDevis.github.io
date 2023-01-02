@@ -1,0 +1,42 @@
+/*!********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/styles/pages/projects.sass ***!
+  \********************************************************************************************************************************/
+.project {
+  border: 1px solid var(--gray);
+}
+.project__links {
+  display: flex;
+  gap: 8px;
+}
+.project__image {
+  border-bottom: 1px solid var(--gray);
+  aspect-ratio: 16/9;
+}
+.project__content {
+  padding: 16px;
+}
+.project__name {
+  font-size: 24px;
+  font-weight: 500;
+}
+.project__description {
+  color: var(--gray);
+  margin: 16px 0;
+}
+.project__techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  color: var(--gray);
+  padding: 8px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.project-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  align-items: start;
+  margin-top: 48px;
+}
