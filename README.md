@@ -9,7 +9,6 @@ Written in vanilla js, if you have any questions you can message me on discord: 
 - [ ] Page contacts
 - [ ] Blog maybe
 - [ ] Animation
-- [ ] Use bundler
 - [ ] Add gh action to compile sass to css
 - [ ] Improve images
 - [ ] Delete unused code

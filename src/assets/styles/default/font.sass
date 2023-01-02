@@ -1,0 +1,11 @@
+
+$fonts: ("Light": 300,"Regular": 400,"Medium": 500,"SemiBold": 600,"Bold": 700)
+$format: "woff"
+
+@each $name, $weight in $fonts
+    @font-face
+        font:
+            family: "Fira Code"
+            weight: $weight
+            style: normal
+        src: url("fonts/FiraCode-#{$name}.#{$format}") format($format)
