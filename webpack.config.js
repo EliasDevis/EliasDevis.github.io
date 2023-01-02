@@ -97,7 +97,6 @@ module.exports = {
             rewrites: [
                 { from: /./, to: "/404.html" },
             ],
-
         }
     },
 
