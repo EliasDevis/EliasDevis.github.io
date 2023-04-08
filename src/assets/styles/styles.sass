@@ -12,3 +12,7 @@
 @import components/h2
 @import components/container
 @import components/logo
+
+:root
+    @each $key, $value in $colors
+        --#{$key}: hsl(#{$value})

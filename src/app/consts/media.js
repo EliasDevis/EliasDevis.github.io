@@ -1,11 +1,17 @@
-import websites from "./websites"
+import proxy from "../proxies/media"
 
 const media = {
-    discord: "914240860101681163",
+    discord: {
+        id: "914240860101681163",
+        tag: "!Elias#3519",
+    },
+    stackOverflow: {
+        id: "19758208",
+        name: "elias",
+    },
     github: "EliasDevis",
     figma: "elias_dev",
     replit: "EliasDev",
-    stackOverflow: "19758208/elias",
     codewars: "EliasDevis",
     devTo: "eliasdevis",
     cssBattle: "elias_dev",
@@ -14,15 +20,5 @@ const media = {
     email: "elias@elias-dev.ml"
 }
 
-const proxy = {
-    get(target, name) {
-        if (name === "emailRaw") 
-            return target.email
-
-        return `${websites[name] ?? ""}${target[name]}`
-    }
-}
-
 export default new Proxy(media, proxy);
-export const discordTag = "!Elias#3519"
 

@@ -7,8 +7,9 @@ $colors: (
     white: 0 0% 100%,
 );
 
-:root {
-    @each $key, $value in $colors {
-        --#{$key}: hsl(#{$value});
-    }
-}
+
+$desktopScreen: 1024px;
+$tabletScreen: 768px;
+$mobileScreen: 500px;
+
+

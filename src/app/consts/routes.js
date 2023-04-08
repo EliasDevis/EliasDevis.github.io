@@ -1,5 +1,7 @@
 
-
+/**
+ * @type {import("../../types/Routes").Routes}
+ */
 export default {
     "/": {
         name: "home",
@@ -13,12 +15,13 @@ export default {
         name: "about",
         element: "About",
     },
-    // "/contacts": {
-    //     name: "contacts",
-    //     element: "Contacts",
-    // },
     "/404": {
         name: "404",
         element: "PageNotFound",
     },
+    
+    // "/contacts": {
+    //     name: "contacts",
+    //     element: "Contacts",
+    // },
 };

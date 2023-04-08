@@ -1,9 +1,9 @@
-import media, { discordTag } from "@/consts/media";
+import media from "@/consts/media";
 
 const contacts = [
     {
         name: "discord",
-        text: discordTag,
+        text: media.discordTag,
     },
     {
         name: "email",

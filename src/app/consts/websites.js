@@ -1,4 +1,4 @@
-const websites = {
+export default {
     discord: "discord.com/users/",
     github: "github.com/",
     figma: "figma.com/@",
@@ -11,11 +11,3 @@ const websites = {
     dribble: "dribbble.com/",
     email: "mailto:"
 }
-
-const proxy = {
-    get(target, name) {
-        return `${name === "email" ? "" : "https://"}${target[name]}`
-    }
-}
-
-export default new Proxy(websites, proxy)

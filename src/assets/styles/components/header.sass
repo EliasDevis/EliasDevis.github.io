@@ -11,7 +11,7 @@ $screen: 768px
     gap: 8px
     top: 0px
 
-    @media (max-width: 1024px) 
+    @media (max-width: $desktopScreen) 
         display: none
     
 
@@ -51,7 +51,7 @@ $screen: 768px
         top: 70%
         right: 0
 
-    @media (max-width: $screen)
+    @media (max-width: $desktopScreen)
         display: block
 
         &:checked 
@@ -151,7 +151,7 @@ $screen: 768px
         &:hover 
             color: var(--white)
 
-    @media (max-width: $screen) 
+    @media (max-width: $desktopScreen) 
         padding-top: 16px
 
         &__links, .dropdown

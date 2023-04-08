@@ -24,11 +24,11 @@
         },
         "protectx": {
             "name": "ProtectX сайт",
-            "description": "Сайт для антикраш дискорд бота"
+            "description": "Сайт для анти-краш дискорд бота"
         },
         "khanswers": {
             "name": "Kahoot Відповіді",
-            "description": "Отпримати відповіді з кахут завдання"
+            "description": "Отримати відповіді з кахут завдання"
         },
         "kotikbot": {
             "name": "КотикБот",
@@ -48,7 +48,7 @@
         },
         "chesspro": {
             "name": "Chess PRO",
-            "description": "Сайт для перегляду шахових турнирів"
+            "description": "Сайт для перегляду шахових турнірів"
         },
         "ooku": {
             "name": "Ooku",
@@ -56,7 +56,15 @@
         },
         "madhost": {
             "name": "MadHost",
-            "description": "Хостинг сайтів и майнкрафт серверів по низьким ціннам"
+            "description": "Хостинг сайтів и майнкрафт серверів з низькими цінами"
+        },
+        "feedrum": {
+            "name": "Feedrum",
+            "description": "Українська соціальна мережа для програмістів"
+        },
+        "linenodes": {
+            "name": "LineNodes",
+            "description": "Хостинг для серверів різних ігор"
         }
     },
     "pages": {
@@ -96,7 +104,9 @@
         "projects": {
             "description": "Мої проекти",
             "decent": "непогані",
-            "small": "маленькі"
+            "small": "маленькі",
+            "inProgress": "недороблені"
+
         },
         "about": {
             "description": "Хто я такий",

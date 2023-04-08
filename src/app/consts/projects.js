@@ -1,25 +1,42 @@
+/**
+ * @type {import("../../types/Project").Project[]}
+ */
 const projects = [
+    {
+        id: "linenodes",
+        links: {
+            figma: "1198393124994627983"
+        },
+        techs: ["pug", "stylus", "node"],
+        hasImage: true,
+    },
+    {
+        id: "feedrum",
+        links: {
+            github: "Feedrum-Project/feedrum-next",
+        },
+        techs: ["node", "next", "react", "zod"],
+        hasImage: true,
+    },
     {
         id: "chertnodes",
         links: {
-            live: "chernodes.ru",
             figma: "1149829028455305659",
         },
-        techs: [23, 2, 9],
+        techs: ["python", "flask", "scss"],
         hasImage: true,
     },
     {
         id: "protectx",
-        techs: [25, 12, 19, 26, 22],
+        techs: ["react", "node", "discordJs"],
         links: {
-            live: "isecurity-protectx.tk",
             figma: "1168662007492356291",
         },
         hasImage: true,
     },
     {
         id: "khanswers",
-        techs: [25, 12, 10],
+        techs: ["express", "node", "ejs"],
         links: {
             live: "khanswers.vercel.app",
             github: "/kahoot-answers",
@@ -28,7 +45,7 @@ const projects = [
     },
     {
         id: "kotikbot",
-        techs: [6, 7, 1],
+        techs: ["html", "css", "js"],
         links: {
             live: "kotikbot.github.io",
             github: "kotikbot/kotikbot.github.io",
@@ -37,25 +54,17 @@ const projects = [
     },
     {
         id: "portfolio",
-        techs: [8, 6, 1],
+        techs: ["js", "sass", "webpack"],
         links: {
             figma: "1164933568884615740",
             github: "/portfolio",
         },
         hasImage: true,
     },
-    {
-        id: "blog",
-        techs: [20, 9],
-        links: {
-            github: "/my-blog",
-        },
-        isSmall: true,
-        hasImage: true,
-    },
+
     {
         id: "discordbot",
-        techs: [22, 12, 0],
+        techs: ["ts", "discordJs", "node"],
         links: {
             github: "/bot-template",
         },
@@ -63,7 +72,7 @@ const projects = [
     },
     {
         id: "chesspro",
-        techs: [15],
+        techs: ["figma"],
         links: {
             figma: "1148344443083977909",
         },
@@ -71,15 +80,22 @@ const projects = [
     },
     {
         id: "ooku",
-        techs: [2, 23],
-        links: {
-            live: "ooku.ga",
-        },
+        techs: ["python", "quart"],
+        links: {},
         isSmall: true,
+        isInProgress: true,
+    },
+    {
+        id: "blog",
+        techs: ["next", "zod"],
+        links: {},
+        isSmall: true,
+        hasImage: true,
+        isInProgress: true,
     },
     {
         id: "madhost",
-        techs: [27, 28, 29, 12],
+        techs: ["pug", "less", "gulp", "node"],
         links: {
             live: "madhost.pw",
         },

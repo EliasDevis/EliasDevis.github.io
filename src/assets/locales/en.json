@@ -32,7 +32,7 @@
         },
         "kotikbot": {
             "name": "KotikBot",
-            "description": "Landing for multi-funtional cute discord bot"
+            "description": "Landing for multi-functional cute discord bot"
         },
         "portfolio": {
             "name": "This Portfolio",
@@ -57,6 +57,14 @@
         "madhost": {
             "name": "MadHost",
             "description": "Minecraft and websites hosting with low prices"
+        },
+        "feedrum": {
+            "name": "Feedrum",
+            "description": "Ukrainian social network designed for programmers"
+        },
+        "linenodes": {
+            "name": "LineNodes",
+            "description": "Game servers hosting"
         }
     },
     "pages": {
@@ -96,7 +104,8 @@
         "projects": {
             "description": "All of my projects",
             "decent": "decent",
-            "small": "small"
+            "small": "small",
+            "inProgress": "unfinished"
         },
         "about": {
             "description": "Who am i",
@@ -117,7 +126,7 @@
                     "I often bike with my friends",
                     "I like pizza and pasta", 
                     "I was in Egypt, Poland and Turkey",
-                    "I’m still studing in school", 
+                    "I’m still studying in school", 
                     "My favorite movie is The Green Mile"
                 ]
             }

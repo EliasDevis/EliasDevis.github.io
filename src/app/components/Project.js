@@ -11,6 +11,7 @@ function mapLinks(links) {
         if (link === "figma") href = `https://figma.com/community/file/${links[link]}`
         if (link === "github" && links[link].startsWith("/")) href = media.github + links[link]
 
+
         const className = link === "cached" ? "button__secondary" : "";
         const name = `${link[0].toUpperCase()}${link.slice(1)}`;
 
@@ -24,6 +25,8 @@ export default ({ id }, t) => {
     const { hasImage, techs: projectTech, links } = projects.find(
         (project) => project.id === id
     );
+
+    console.log(id)
 
     return /*html*/ `
         <div class="project">
