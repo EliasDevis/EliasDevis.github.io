@@ -3,9 +3,10 @@
  */
 const projects = [
     {
-        id: "linenodes",
+        id: "deplos",
         links: {
-            figma: "1198393124994627983"
+            figma: "1198393124994627983",
+            live: "deplos.com"
         },
         techs: ["pug", "stylus", "node"],
         hasImage: true,
@@ -14,6 +15,7 @@ const projects = [
         id: "feedrum",
         links: {
             github: "Feedrum-Project/feedrum-next",
+            live: "feedrum.com"
         },
         techs: ["node", "next", "react", "zod"],
         hasImage: true,
@@ -77,21 +79,6 @@ const projects = [
             figma: "1148344443083977909",
         },
         isSmall: true,
-    },
-    {
-        id: "ooku",
-        techs: ["python", "quart"],
-        links: {},
-        isSmall: true,
-        isInProgress: true,
-    },
-    {
-        id: "blog",
-        techs: ["next", "zod"],
-        links: {},
-        isSmall: true,
-        hasImage: true,
-        isInProgress: true,
     },
     {
         id: "madhost",

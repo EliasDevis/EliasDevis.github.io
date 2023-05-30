@@ -62,8 +62,8 @@
             "name": "Feedrum",
             "description": "Украинская социальная сеть для программистов"
         },
-        "linenodes": {
-            "name": "LineNodes",
+        "deplos": {
+            "name": "Deplos",
             "description": "Хостинг для серверов разных игр"
         }
     },

@@ -26,13 +26,11 @@ export default ({ id }, t) => {
         (project) => project.id === id
     );
 
-    console.log(id)
-
     return /*html*/ `
         <div class="project">
             ${
                 hasImage
-                    ? `<img src="/images/projects/${id}.jpg" alt="${name}" class="project__image">`
+                    ? `<img src="/images/projects/${id}.webp" alt="${t[id].name}" class="project__image">`
                     : ""
             }
             

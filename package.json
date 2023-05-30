@@ -1,8 +1,11 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "main": "src/app/index.js",
-  "author": "Elias",
+  "author": {
+    "name": "Elias",
+    "url": "https://elias-dev.ml"
+  },
   "license": "MIT",
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
