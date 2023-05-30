@@ -104,7 +104,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"getLocale\": () => (/* binding */ getLocale)\n/* harmony export */ });\nconst defaultLocale = \"en\"\n\n\nfunction setLocaleHander() {\n    const options = document.querySelectorAll(\".dropdown__option\");\n    const label = document.querySelector(\".dropdown__label\");\n\n    options.forEach((option) => {\n        if (option.innerHTML === localStorage.locale) \n            [label.innerHTML, option.innerHTML] = [localStorage.locale, label.innerHTML]\n\n        option.addEventListener(\"click\", () => {\n            localStorage.locale = option.innerHTML;\n\n            window.location.reload();\n        });\n    });\n}\n\nasync function getLocale() {\n    const locale = localStorage.locale ?? defaultLocale\n\n    return fetch(`/locales/${locale}.json`).then(res => res.json())\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (setLocaleHander);\n\n\n\n//# sourceURL=webpack://portfolio/./src/app/helpers/localeHandler.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   getLocale: () => (/* binding */ getLocale)\n/* harmony export */ });\nconst defaultLocale = \"en\"\n\n\nfunction setLocaleHander() {\n    const options = document.querySelectorAll(\".dropdown__option\");\n    const label = document.querySelector(\".dropdown__label\");\n\n    options.forEach((option) => {\n        if (option.innerHTML === localStorage.locale) \n            [label.innerHTML, option.innerHTML] = [localStorage.locale, label.innerHTML]\n\n        option.addEventListener(\"click\", () => {\n            localStorage.locale = option.innerHTML;\n\n            window.location.reload();\n        });\n    });\n}\n\nasync function getLocale() {\n    const locale = localStorage.locale ?? defaultLocale\n\n    return fetch(`/locales/${locale}.json`).then(res => res.json())\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (setLocaleHander);\n\n\n\n//# sourceURL=webpack://portfolio/./src/app/helpers/localeHandler.js?");
 
 /***/ }),
 
@@ -233,7 +233,7 @@ eval("var map = {\n\t\"./About\": [\n\t\t\"./src/app/views/About.js\",\n\t\t\"sr
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + {"src_app_views_About_js":"2d6aec869ec05533d611","src_app_views_Contacts_js":"560ef71063b129da344c","src_app_views_Home_js":"71d62497a10edbb1199d","src_app_views_PageNotFound_js":"889f973003c86d2b46df","src_app_views_Projects_js":"4a56ad04e56dfbc40704"}[chunkId] + ".js";
+/******/ 			return "js/" + {"src_app_views_About_js":"459707b3be270cec240b","src_app_views_Contacts_js":"560ef71063b129da344c","src_app_views_Home_js":"2d848f3ca36cc9311c75","src_app_views_PageNotFound_js":"889f973003c86d2b46df","src_app_views_Projects_js":"7cfd0a7d3f25d9aa9ed6"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -333,7 +333,10 @@ eval("var map = {\n\t\"./About\": [\n\t\t\"./src/app/views/About.js\",\n\t\t\"sr
 /******/ 				scriptUrl = document.currentScript.src;
 /******/ 			if (!scriptUrl) {
 /******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
 /******/ 			}
 /******/ 		}
 /******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
@@ -465,7 +468,7 @@ eval("var map = {\n\t\"./About\": [\n\t\t\"./src/app/views/About.js\",\n\t\t\"sr
 /******/ 								}
 /******/ 							};
 /******/ 							__webpack_require__.l(url, loadingEnded, "chunk-" + chunkId, chunkId);
-/******/ 						} else installedChunks[chunkId] = 0;
+/******/ 						}
 /******/ 					}
 /******/ 				}
 /******/ 		};
