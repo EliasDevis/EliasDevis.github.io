@@ -7,7 +7,7 @@
     },
     "footer": {
         "description": "Web designer and front-end developer based in Ukraine",
-        "copyright": "Copyright 2022. Made by Elias",
+        "copyright": "Copyright 2023. Made by Elias",
         "media": "Media"
     },
     "skills": {
@@ -65,6 +65,10 @@
         "deplos": {
             "name": "Deplos",
             "description": "Game servers hosting"
+        },
+        "pixel-battle": {
+            "name": "Pixel Battle",
+            "description": "Pixel art battle game"
         }
     },
     "pages": {
@@ -125,8 +129,6 @@
                     "I like winter more than summer", 
                     "I often bike with my friends",
                     "I like pizza and pasta", 
-                    "I was in Egypt, Poland and Turkey",
-                    "I’m still studying in school", 
                     "My favorite movie is The Green Mile"
                 ]
             }

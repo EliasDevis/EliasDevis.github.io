@@ -12,6 +12,15 @@ const projects = [
         hasImage: true,
     },
     {
+        id: "pixel-battle",
+        links: {
+            live: "pixelbattle.fun",
+            github: "pixelate-it/pixelbattle-frontend",
+        },
+        techs: ["preact", "css", "pixijs", "ts"],
+        hasImage: true
+    },
+    {
         id: "feedrum",
         links: {
             github: "Feedrum-Project/feedrum-next",

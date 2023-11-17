@@ -11,7 +11,7 @@ export default (t) => {
             <div class="hero__illustrations">
                 <img src="/images/logo-outline.svg" alt="" class="hero__logo">
                 <img src="/images/hero.png" alt="Elias" class="hero__image">
-                <div class="hero__status">${t.status} <a href="https://elias-dev.ml">Portfolio</a></div>
+                <div class="hero__status">${t.status} Nothing</div>
                 ${Dots({})}
             </div>
         </section>

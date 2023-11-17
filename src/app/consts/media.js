@@ -3,7 +3,7 @@ import proxy from "../proxies/media"
 const media = {
     discord: {
         id: "914240860101681163",
-        tag: "!Elias#3519",
+        tag: "elias.dev.",
     },
     stackOverflow: {
         id: "19758208",
@@ -17,7 +17,8 @@ const media = {
     cssBattle: "elias_dev",
     codepen: "elias_dev",
     dribble: "Elias_dev",
-    email: "elias@elias-dev.ml"
+    email: "elias.devis@protonmail.com"
+
 }
 
 export default new Proxy(media, proxy);

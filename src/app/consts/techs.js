@@ -31,4 +31,6 @@ export default {
     gulp: "Gulp",
     next: "Next",
     deno: "Deno",
+    pixijs: "PixiJS",
+    preact: "Preact",
 }

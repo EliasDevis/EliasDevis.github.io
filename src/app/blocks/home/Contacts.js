@@ -8,7 +8,7 @@ const contacts = [
     {
         name: "email",
         text: media.emailRaw,
-    },
+    }
 ];
 
 export default (t) => {
