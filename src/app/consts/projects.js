@@ -6,7 +6,8 @@ const projects = [
         id: "deplos",
         links: {
             figma: "1198393124994627983",
-            live: "deplos.com"
+            live: "deplos.github.io",
+            github: "Deplos/deplos.github.io"
         },
         techs: ["pug", "stylus", "node"],
         hasImage: true,
@@ -24,7 +25,7 @@ const projects = [
         id: "feedrum",
         links: {
             github: "Feedrum-Project/feedrum-next",
-            live: "feedrum.com"
+            figma: "1314605686829534158"
         },
         techs: ["node", "next", "react", "zod"],
         hasImage: true,
@@ -68,7 +69,8 @@ const projects = [
         techs: ["js", "sass", "webpack"],
         links: {
             figma: "1164933568884615740",
-            github: "/portfolio",
+            github: "/EliasDevis.github.io",
+            live: "eliasdevis.github.io"
         },
         hasImage: true,
     },
