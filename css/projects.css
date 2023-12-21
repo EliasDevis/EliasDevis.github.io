@@ -6,6 +6,7 @@
 }
 .project__links {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 .project__image {
