@@ -233,7 +233,7 @@ eval("var map = {\n\t\"./About\": [\n\t\t\"./src/app/views/About.js\",\n\t\t\"sr
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + {"src_app_views_About_js":"43fe5166990520a6bf21","src_app_views_Contacts_js":"560ef71063b129da344c","src_app_views_Home_js":"fe4dcbbc95f983abdee7","src_app_views_PageNotFound_js":"889f973003c86d2b46df","src_app_views_Projects_js":"4f7a2b167292bc21cf99"}[chunkId] + ".js";
+/******/ 			return "js/" + {"src_app_views_About_js":"43fe5166990520a6bf21","src_app_views_Contacts_js":"560ef71063b129da344c","src_app_views_Home_js":"e77856d80a3f5600f2c3","src_app_views_PageNotFound_js":"889f973003c86d2b46df","src_app_views_Projects_js":"4f7a2b167292bc21cf99"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -361,9 +361,10 @@ eval("var map = {\n\t\"./About\": [\n\t\t\"./src/app/views/About.js\",\n\t\t\"sr
 /******/ 				if (event.type === 'load') {
 /******/ 					resolve();
 /******/ 				} else {
-/******/ 					var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+/******/ 					var errorType = event && event.type;
 /******/ 					var realHref = event && event.target && event.target.href || fullhref;
-/******/ 					var err = new Error("Loading CSS chunk " + chunkId + " failed.\n(" + realHref + ")");
+/******/ 					var err = new Error("Loading CSS chunk " + chunkId + " failed.\n(" + errorType + ": " + realHref + ")");
+/******/ 					err.name = "ChunkLoadError";
 /******/ 					err.code = "CSS_CHUNK_LOAD_FAILED";
 /******/ 					err.type = errorType;
 /******/ 					err.request = realHref;
@@ -373,6 +374,7 @@ eval("var map = {\n\t\"./About\": [\n\t\t\"./src/app/views/About.js\",\n\t\t\"sr
 /******/ 			}
 /******/ 			linkTag.onerror = linkTag.onload = onLinkComplete;
 /******/ 			linkTag.href = fullhref;
+/******/ 		
 /******/ 		
 /******/ 			if (oldTag) {
 /******/ 				oldTag.parentNode.insertBefore(linkTag, oldTag.nextSibling);
