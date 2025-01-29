@@ -1,5 +1,20 @@
+@use '../default/variables' as *
+
 .project
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    gap: 16px
+    align-items: start
+    margin-top: 48px
     border: 1px solid var(--gray)
+
+    @media (max-width: $desktopScreen)
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+        & 
+            gap: 16px
+            align-items: start
+            margin-top: 48px
+
 
     &__links
         display: flex
@@ -14,9 +29,8 @@
         padding: 16px
 
     &__name
-        font:
-            size: 24px
-            weight: 500
+        font-size: 24px
+        font-weight: 500
 
     &__description
         color: var(--gray)
@@ -33,12 +47,10 @@
 .project-list
     width: 100%
     display: grid
-
     grid-template-columns: repeat(3, 1fr)
-
-    @media (max-width: $desktopScreen)
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
-
     gap: 16px
     align-items: start
     margin-top: 48px
+
+    @media (max-width: $desktopScreen)
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))

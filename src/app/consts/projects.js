@@ -7,7 +7,7 @@ const projects = [
         links: {
             figma: "1198393124994627983",
             live: "deplos.github.io",
-            github: "Deplos/deplos.github.io"
+            github: "Deplos/deplos.github.io",
         },
         techs: ["pug", "stylus", "node"],
         hasImage: true,
@@ -19,13 +19,13 @@ const projects = [
             github: "pixelate-it/pixelbattle-frontend",
         },
         techs: ["preact", "css", "pixijs", "ts"],
-        hasImage: true
+        hasImage: true,
     },
     {
         id: "feedrum",
         links: {
             github: "Feedrum-Project/feedrum-next",
-            figma: "1314605686829534158"
+            figma: "1314605686829534158",
         },
         techs: ["node", "next", "react", "zod"],
         hasImage: true,
@@ -70,7 +70,7 @@ const projects = [
         links: {
             figma: "1164933568884615740",
             github: "/EliasDevis.github.io",
-            live: "eliasdevis.github.io"
+            live: "eliasdevis.github.io",
         },
         hasImage: true,
     },

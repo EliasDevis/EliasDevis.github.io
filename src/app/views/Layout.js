@@ -3,7 +3,7 @@ import Header from "@/components/Header.js";
 import { getLocale } from "@/helpers/localeHandler.js";
 
 export default async (content, path) => {
-    const locale = await getLocale()
+    const locale = await getLocale();
 
     return /*html*/ `
         ${Header(locale.header)}

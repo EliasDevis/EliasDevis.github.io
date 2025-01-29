@@ -1,4 +1,4 @@
-import proxy from "../proxies/media"
+import proxy from "../proxies/media";
 
 const media = {
     discord: {
@@ -17,9 +17,7 @@ const media = {
     cssBattle: "elias_dev",
     codepen: "elias_dev",
     dribble: "Elias_dev",
-    email: "elias.devis@protonmail.com"
-
-}
+    email: "elias.devis@protonmail.com",
+};
 
 export default new Proxy(media, proxy);
-

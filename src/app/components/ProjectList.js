@@ -1,7 +1,6 @@
 import Project from "@/components/Project";
 import projects from "@/consts/projects";
 
-
 export default ({ title, filter = () => true, limit = projects.length }, t) => {
     return /*html*/ `
             ${title ? `<div> <h2 class="h2">${title}</h2>` : ""}
