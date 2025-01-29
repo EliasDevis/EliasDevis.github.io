@@ -33,4 +33,4 @@ export default {
     deno: "Deno",
     pixijs: "PixiJS",
     preact: "Preact",
-}
+};

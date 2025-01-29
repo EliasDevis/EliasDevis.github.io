@@ -1,4 +1,3 @@
-
 // From https://github.com/rafgraph/spa-github-pages
 export default async () => {
     const l = window.location;
@@ -16,4 +15,4 @@ export default async () => {
             l.pathname.slice(0, -1) + decoded + l.hash
         );
     }
-}
+};

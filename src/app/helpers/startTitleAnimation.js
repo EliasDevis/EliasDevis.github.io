@@ -1,6 +1,5 @@
-
 const steps = "/-\\|";
-const FPS = 2
+const FPS = 2;
 const frameInterval = 1000 / FPS;
 
 let step = 0;
@@ -19,4 +18,4 @@ export default (pathName) => {
 
         window.requestAnimationFrame(animation);
     }
-}
+};

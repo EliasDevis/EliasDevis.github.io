@@ -5,11 +5,10 @@ import Skills from "@/blocks/home/Skills.js";
 import About from "@/blocks/home/About.js";
 import Contacts from "@/blocks/home/Contacts.js";
 
-import "styles/pages/home.sass"
-
+import "styles/pages/home.sass";
 
 export default (t, locale) => {
-    return /*html*/`
+    return /*html*/ `
         ${Hero(t.hero)}
         ${Quote(t.quote)}
         ${Projects(t.projects, locale.projects)}

@@ -6,11 +6,12 @@ import media from "@/consts/media";
 function mapLinks(links) {
     function map(link) {
         let href =
-        "https://" + (link === "live" ? "" : websites[link]) + links[link];
+            "https://" + (link === "live" ? "" : websites[link]) + links[link];
 
-        if (link === "figma") href = `https://figma.com/community/file/${links[link]}`
-        if (link === "github" && links[link].startsWith("/")) href = media.github + links[link]
-
+        if (link === "figma")
+            href = `https://figma.com/community/file/${links[link]}`;
+        if (link === "github" && links[link].startsWith("/"))
+            href = media.github + links[link];
 
         const className = link === "cached" ? "button__secondary" : "";
         const name = `${link[0].toUpperCase()}${link.slice(1)}`;
@@ -22,9 +23,11 @@ function mapLinks(links) {
 }
 
 export default ({ id }, t) => {
-    const { hasImage, techs: projectTech, links } = projects.find(
-        (project) => project.id === id
-    );
+    const {
+        hasImage,
+        techs: projectTech,
+        links,
+    } = projects.find((project) => project.id === id);
 
     return /*html*/ `
         <div class="project">

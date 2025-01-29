@@ -1,0 +1,6 @@
+@use 'default' as *
+@use 'components' as *
+
+:root
+    @each $key, $value in $colors
+        --#{$key}: hsl(#{$value})

@@ -1,7 +1,7 @@
 import Path from "../components/Path.js";
 import ProjectList from "../components/ProjectList.js";
 
-import "styles/pages/projects.sass"
+import "styles/pages/projects.sass";
 
 export default (t, t2) => {
     return /*html*/ `
